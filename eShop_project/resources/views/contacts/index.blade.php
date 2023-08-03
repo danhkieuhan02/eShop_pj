@@ -8,7 +8,7 @@
                     <th>Fullname</th>
                     <th>Email</th>
                     <th>Message</th>
-                    <th>Created at</th>
+                    <th>Create at</th>
                 </tr>
             </thead>
             <tbody>
@@ -17,7 +17,7 @@
                         <td>{{ $ct->name }}</td>
                         <td>{{ $ct->email }}</td>
                         <td>{{ $ct->message }}</td>
-                        <td>{{ $ct->create_at }}</td>
+                        <td>{{ $ct->created_at }}</td>
                     </tr>
                 @endforeach
             </tbody>

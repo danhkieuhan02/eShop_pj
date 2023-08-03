@@ -33,29 +33,29 @@
                 @endif
             </ul>
         </div>
-        <div class="profile">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('contacts.contact') }}">Contact</a>
-                </li>
-                @if (Auth::check())
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('client.order') }}">
-                            <i class="bi bi-cart4"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-bag-heart"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ route('account.updatePassword') }}" class="nav-link">
-                            <i class="bi bi-key"></i>
-                        </a>
-                    </li>
-                @endif
-            </ul>
-        </div>
-    </div>
 </nav>
+<div class="profile">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="bi bi-bag-heart"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('client.order') }}">
+                <i class="bi bi-cart4"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ route('contacts.contact') }}">Contact</a>
+        </li>
+        @if (Auth::check())
+            <li class="nav-item">
+                <a href="{{ route('account.updatePassword') }}" class="nav-link">
+                    Setting
+                </a>
+            </li>
+        @endif
+    </ul>
+</div>
+</div>

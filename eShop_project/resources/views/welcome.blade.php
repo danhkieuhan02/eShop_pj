@@ -7,8 +7,41 @@
                     Paradise of shoes
                 </h3>
                 <div class="img-poster">
-                    <div class="ad-banner">
-                        <img src="/img/WCCH_1677842740807.webp" style="width: 1120px;">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="/img/WCCH_1677842740807.webp" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="/img/banner2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/maxresdefault.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                     <div class="poster">
                         <img src="/img/poster_sale_2.jpg" style="width: 300px;">
@@ -27,6 +60,7 @@
                             <i class="bi bi-search"></i>
                         </button>
                     </div>
+                    <h4>New products</h4>
                 </form>
                 <ul class="products">
                     @foreach ($data as $item)
@@ -57,6 +91,28 @@
         {{ $data->links() }}
     </x-layout-admin>
     <footer>
+        <hr>
+        <div class="info-shop">
+            <div class="test-1">
+                <p class="test1">
+                    About us
+                </p>
+                <div class="infor-1">
+                    <i>Chúng tôi luôn dành toàn bộ tâm huyết và sự nghiêm túc trong từng sản phẩm, với mong muốn làm hài
+                        lòng và
+                        giúp bạn tìm được phong cách thời trang phù hợp.</i><br>
+                    <img src="/img/phoigiay.jpg" style="margin-left:-777px; width:300px" alt=""><br>
+                </div>
+
+                <div class="infor-1">
+                    <i>Tại paradies of shoes, bạn sẽ có vô vàng lựa chọn không những về giày dép, mà còn về phụ kiện thời
+                        trang
+                        và các sản phẩm về thời trang khác.</i><br>
+                    <img src="/img/galutiderby2-eyelet03-1118.jpg" style="margin-right:-777px; width:300px"
+                        alt="">
+                </div>
+            </div>
+        </div>
         <div class="footer">
             <div class="text">
                 <i>Let we know how satisfied you are with our products</i>
@@ -68,4 +124,3 @@
             </div>
         </div>
     </footer>
-    <h3>Test commit</h3>
