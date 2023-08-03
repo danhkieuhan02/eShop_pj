@@ -3,11 +3,12 @@
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\ProductsController;
-use App\Http\Controllers\Client\ContactController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Client\OrderController;
 use App\Http\Controllers\ForgetPasswordController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', [HomeController::class, "index"])->name("home");
 
@@ -46,6 +47,12 @@ Route::prefix("/account")->name('account.')->group(function () {
 
 
 Route::prefix("/client")->name("client.")->group(function () {
-    Route::get('/lien-he', [ContactController::class, "contact"])->name('contact');
     Route::get('/dat-hang', [OrderController::class, "orders"])->name('order');
+});
+
+Route::prefix("/contacts")->name("contacts.")->group(function () {
+    Route::get('/lien-he', [ContactController::class, "createContact"])->name('contact');
+    Route::get('/danh-sach-lien-he', [ContactController::class, "index"])->name('index');
+    Route::get('/tao-lien-he', [ContactController::class, "create"])->name('create');
+    Route::post('/luu-lien-he', [ContactController::class, "store"])->name('store');
 });
