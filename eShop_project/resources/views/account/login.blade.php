@@ -31,18 +31,18 @@
         @endif
         {{-- Phần đăng ký --}}
         <div class="row">
-            <div class="col-md-6">
-                <h3>Login</h3>
+            <div class="col-md-6 m-auto">
+                <h3 class="text-center">Login</h3>
                 <form action="{{ route('account.login') }}" method="post">
                     @csrf
                     <x-app-input name="email" type="email" label="Email" />
                     <x-app-input name="password" type="password" label="Password" />
-                    <div class="mt-3">
+                    <div class="mt-3 text-end">
                         <button type="submit" class="btn btn-outline-success">Login</button>
                     </div>
                     <div class="mt-3">
-                        <p>Or Sign Up Using</p>
-                        <a href="{{ route('account.register') }}">Register now</a>
+                        <i>Not have an account yet?</i>
+                        <a href="{{ route('account.register') }}" class="text-decoration-none">Register now</a>
                     </div>
                 </form>
             </div>

@@ -70,7 +70,7 @@
                                     <a href="" class="product-thumb">
                                         <img src="{{ $item->cover_img }}" style="width: 300px;">
                                     </a>
-                                    <a href="/client/order" class="buy-now">Buy now</a>
+                                    <a href="{{ route('client.order') }}" class="buy-now">Buy now</a>
                                 </div>
                                 <div class="product-info">
                                     <a href="" class="product-cat">{{ $item->category->cat_name ?? '' }}</a>
@@ -98,16 +98,16 @@
                     About us
                 </p>
                 <div class="infor-1">
-                    <i>Chúng tôi luôn dành toàn bộ tâm huyết và sự nghiêm túc trong từng sản phẩm, với mong muốn làm hài
-                        lòng và
-                        giúp bạn tìm được phong cách thời trang phù hợp.</i><br>
+                    <i>We always devote all our enthusiasm and seriousness to each product, <br>with the desire to satisfy
+                        and
+                        help you find the right fashion style.</i><br>
                     <img src="/img/phoigiay.jpg" style="margin-left:-777px; width:300px" alt=""><br>
                 </div>
 
                 <div class="infor-1">
-                    <i>Tại paradies of shoes, bạn sẽ có vô vàng lựa chọn không những về giày dép, mà còn về phụ kiện thời
-                        trang
-                        và các sản phẩm về thời trang khác.</i><br>
+                    <i>At Paradies of Shoes, you will have endless choices not only of shoes <br>
+                        but also of fashion accessories
+                        page and other fashion products.</i><br>
                     <img src="/img/galutiderby2-eyelet03-1118.jpg" style="margin-right:-777px; width:300px"
                         alt="">
                 </div>

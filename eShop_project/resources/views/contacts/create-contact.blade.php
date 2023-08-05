@@ -15,8 +15,9 @@
 
                     <label for="comment">Message</label>
                     <input type="text" id="message" name="message" placeholder="Enter your complaint" required>
-
-                    <input type="submit" class="btn btn-outline-success" value="Send">
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-outline-success" value="Send">
+                    </div>
                 </form>
             </div>
         </div>

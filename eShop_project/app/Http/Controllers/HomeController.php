@@ -10,7 +10,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $data = product::orderByDesc('id')->paginate(6);
+        $data = product::orderByDesc('id')->paginate(9);
         if ($key = request()->key) {
             $data = product::orderBy('id', 'desc')->where('prod_name', 'like', '%' . $key . '%')->paginate(5);
         }

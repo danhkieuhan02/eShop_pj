@@ -33,7 +33,7 @@
                     <x-app-input name="email" type="email" label="Email" />
                     <x-app-input name="password" type="password" label="Password" />
                     <x-app-input name="cf_password" type="password" label="Confirm password" />
-                    <div class="mt-3">
+                    <div class="mt-3 text-center">
                         <button type="submit" class="btn btn-outline-success">Register</button>
                     </div>
                 </form>

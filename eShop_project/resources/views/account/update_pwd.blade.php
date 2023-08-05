@@ -14,14 +14,14 @@
         @endif
         <div class="row">
             <div class="col-md-12">
-                <h3 style="text-align: center">Update Password</h3>
+                <h3 class="text-center">Update Password</h3>
                 <form action="{{ route('account.changePassword') }}" method="post">
                     @csrf
                     <x-app-input name="old_password" type="password" label="Old Password" />
                     <x-app-input name="new_password" type="password" label="New Password" />
-                    <x-app-input name="cf_password" type="password" label="Confirm assword" />
+                    <x-app-input name="cf_password" type="password" label="Confirm password" />
 
-                    <div class="mt-3">
+                    <div class="mt-3 text-center">
                         <button type="submit" class="btn btn-outline-success">Update</button>
                     </div>
             </div>
