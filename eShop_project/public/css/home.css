@@ -143,3 +143,7 @@ ul.products li .product-info a.product-content {
 .footer-1 {
     display: flex;
 }
+
+.col-3 h4 {
+    font-size: 1.75rem;
+}

@@ -175,16 +175,47 @@
             <div class="text">
                 <h4 class="mt-3">Paradies of Shoes</h4>
                 <i>Let we know how satisfied you are with our products</i>
+                <br>
+                <br>
             </div>
-            <div class="footer-1">
-                <div class="end">
-                    <div class="contact-items">
-                        <i class="bi bi-geo-alt-fill">&emsp;Can Tho, Viet Nam</i><br>
-                        <i class="bi bi-telephone-fill">&emsp;Phone: +84945255664</i><br>
-                        <i class="bi bi-envelope-fill">&emsp;Mail: danhkieuhan135@gmail.com</i><br>
+            <div class="container text-left">
+                <div class="row pb-5">
+                    <div class="col-3">
+                        <h4>Informations</h4>
+                        <p class="mb-1 mt-3"><i class="bi bi-dot"></i>&emsp;Website: pofs.com.vn</p>
+                        <p class="mb-1"><i class="bi bi-dot"></i>&emsp;Can Tho, Viet Nam</p>
+                        <p class="mb-1"><i class="bi bi-dot"></i>&emsp;Hotline: +84945255664</p>
+                        <p class="mb-1"><i class="bi bi-dot"></i>&emsp;Email: danhkieuhan135@gmail.com</p>
                     </div>
-                    <div class="infor-details">
-                        <h4>INFOMATION</h4>
+                    <div class="col-3">
+                        <h4>Introduce</h4>
+                        <p class="mb-1 mt-3"><i class="bi bi-dot"></i>&emsp;About us</p>
+                        <p class="mb-1"><i class="bi bi-dot"></i>&emsp;News and stores</p>
+                        <p class="mb-1"><i class="bi bi-dot"></i>&emsp;How to contact us</p>
+                        <p class="mb-1"><i class="bi bi-dot"></i>&emsp;Promotion information</p>
+                    </div>
+
+                    <div class="col-3">
+                        <h4>Support</h4>
+                        <p class="mb-1 mt-3"><i class="bi bi-dot"></i>&emsp;Partner</p>
+                        <p class="mb-1"><i class="bi bi-dot"></i>&emsp;Recruitment</p>
+                        <p class="mb-1"><i class="bi bi-dot"></i>&emsp;Online support</p>
+                        <p class="mb-1"><i class="bi bi-dot"></i>&emsp;Customer service</p>
+                    </div>
+                    <div class="col-3">
+                        <h4>Follow us</h4>
+                        <a href="https://www.facebook.com/duongg.tichh.7"><i class="bi bi-facebook"
+                                style="font-size:50px"></i>
+                        </a>
+                        <a href="https://www.instagram.com/handaudaihoc/"><i class="bi bi-instagram"
+                                style="font-size:50px"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCmTwkI1MQqUj8a1nhk3L5Pw"><i class="bi bi-youtube"
+                                style="font-size:50px"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@dkhandayy_" class="text-decoration-line-none"><i
+                                class="bi bi-tiktok" style="font-size:50px"></i>
+                        </a>
                     </div>
                 </div>
             </div>
