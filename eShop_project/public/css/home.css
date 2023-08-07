@@ -127,3 +127,11 @@ ul.products li .product-info a.product-content {
 .info-shop .test-1 {
     text-align: center;
 }
+
+.infor-1 {
+    display: block;
+}
+
+.footer {
+    display: flex;
+}

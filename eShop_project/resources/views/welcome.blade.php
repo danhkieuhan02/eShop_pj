@@ -82,6 +82,30 @@
                         </li>
                     @endforeach
                 </ul>
+                <div class="sale-off-banner">
+                    <img src="/img/hinh-banner-sale-cho-ngay-flash-sale.jpg" style="width:1300px; height:300px">
+                </div> <br><br>
+                <h4>Best sale today</h4>
+                <ul class="products">
+                    @foreach ($data as $item)
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="{{ $item->cover_img }}" style="width: 300px;">
+                                    </a>
+                                    <a href="{{ route('client.order') }}" class="buy-now">Buy now</a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-cat">{{ $item->category->cat_name ?? '' }}</a>
+                                    <a href="" class="product-name"> {{ $item->prod_name }}</a>
+                                    <a href="" class="product-price">${{ number_format($item->price) }}</a>
+                                    <a href="" class="product-content">{{ $item->content }}</a>
+                                </div>
+                            </div>
+                        </li>
+                    @endforeach
+                </ul>
             </div>
         </div>
         <x-slot name="css">
@@ -91,36 +115,70 @@
         {{ $data->links() }}
     </x-layout-admin>
     <footer>
+        <h3>About us</h3>
         <hr>
         <div class="info-shop">
-            <div class="test-1">
-                <p class="test1">
-                    About us
-                </p>
-                <div class="infor-1">
-                    <i>We always devote all our enthusiasm and seriousness to each product, <br>with the desire to satisfy
-                        and
-                        help you find the right fashion style.</i><br>
-                    <img src="/img/phoigiay.jpg" style="margin-left:-777px; width:300px" alt=""><br>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/img/phoigiay.jpg" class="card-img-top" style="width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasion</h5>
+                            <p class="card-text">We always devote all our enthusiasm and seriousness to each product,
+                                with the desire to satisfy
+                                and help you find the right fashion style.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="infor-1">
-                    <i>At Paradies of Shoes, you will have endless choices not only of shoes <br>
-                        but also of fashion accessories
-                        page and other fashion products.</i><br>
-                    <img src="/img/galutiderby2-eyelet03-1118.jpg" style="margin-right:-777px; width:300px"
-                        alt="">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/img/phoigiay.jpg" class="card-img-top" style="width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Experience</h5>
+                            <p class="card-text">At Paradies of Shoes, you will have endless choices not only of shoes
+                                but also of fashion accessories page and other fashion products.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/img/phoigiay.jpg" class="card-img-top" style="width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Quality</h5>
+                            <p class="card-text">We affirm and make sure that Paradies of Shoes will not disappoint you in
+                                terms of product quality as well as the material of each product which is completely
+                                environmentally friendly and safe for health.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
         <div class="footer">
-            <div class="text">
-                <i>Let we know how satisfied you are with our products</i>
-            </div>
-            <div class="contct-items">
-                <i class="bi bi-geo-alt-fill">&emsp;Can Tho, Viet Nam</i><br>
-                <i class="bi bi-telephone-fill">&emsp;Phone: +84945255664</i><br>
-                <i class="bi bi-envelope-fill">&emsp;Mail: danhkieuhan135@gmail.com</i><br>
+            <i>Let we know how satisfied you are with our products</i>
+            <div class="footer-1">
+                <div class="end">
+                    <div class="contact-items">
+                        <i class="bi bi-geo-alt-fill">&emsp;Can Tho, Viet Nam</i><br>
+                        <i class="bi bi-telephone-fill">&emsp;Phone: +84945255664</i><br>
+                        <i class="bi bi-envelope-fill">&emsp;Mail: danhkieuhan135@gmail.com</i><br>
+                    </div>
+                    <div class="infor-details">
+                        <h4>INFOMATION</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
