@@ -115,15 +115,17 @@
         {{ $data->links() }}
     </x-layout-admin>
     <footer>
-        <h3>About us</h3>
         <hr>
+        <br>
         <div class="info-shop">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/img/phoigiay.jpg" class="card-img-top" style="width:300px;">
+                        <div class="text-center">
+                            <img src="/img/phoigiay.jpg" class="card-img-top mt-4" style="width:300px; ">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Pasion</h5>
+                            <h5 class="card-title text-center">Pasion</h5>
                             <p class="card-text">We always devote all our enthusiasm and seriousness to each product,
                                 with the desire to satisfy
                                 and help you find the right fashion style.
@@ -136,9 +138,11 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/img/phoigiay.jpg" class="card-img-top" style="width:300px;">
+                        <div class="text-center">
+                            <img src="/img/phoigiay.jpg" class="card-img-top mt-4" style="width:300px;">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Experience</h5>
+                            <h5 class="card-title text-center">Experience</h5>
                             <p class="card-text">At Paradies of Shoes, you will have endless choices not only of shoes
                                 but also of fashion accessories page and other fashion products.
                             </p>
@@ -150,12 +154,13 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/img/phoigiay.jpg" class="card-img-top" style="width:300px;">
+                        <div class="text-center">
+                            <img src="/img/phoigiay.jpg" class="card-img-top mt-4" style="width:300px;">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Quality</h5>
-                            <p class="card-text">We affirm and make sure that Paradies of Shoes will not disappoint you in
-                                terms of product quality as well as the material of each product which is completely
-                                environmentally friendly and safe for health.</p>
+                            <h5 class="card-title text-center">Quality</h5>
+                            <p class="card-text">We affirm and make sure that Paradise Shoes will not disappoint you,
+                                because our products are completely environmentally friendly and safe for health.</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -167,7 +172,10 @@
         <br>
         <br>
         <div class="footer">
-            <i>Let we know how satisfied you are with our products</i>
+            <div class="text">
+                <h4 class="mt-3">Paradies of Shoes</h4>
+                <i>Let we know how satisfied you are with our products</i>
+            </div>
             <div class="footer-1">
                 <div class="end">
                     <div class="contact-items">

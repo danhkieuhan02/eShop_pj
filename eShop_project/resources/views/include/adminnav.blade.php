@@ -7,15 +7,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"
-                        href="{{ route('admin.category.index') }}">Categories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"
-                        href="{{ route('admin.product.index') }}">Products</a>
-                </li>
+
                 @if (Auth::check())
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="{{ route('admin.category.index') }}">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="{{ route('admin.product.index') }}">Products</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('account.logout') }}">Logout</a>
                     </li>
@@ -37,14 +38,10 @@
 <div class="profile">
     <ul class="nav justify-content-end">
         <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="bi bi-bag-heart"></i>
-            </a>
+            <a class="nav-link" href="#">Cart</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('client.order') }}">
-                <i class="bi bi-cart4"></i>
-            </a>
+            <a class="nav-link" href="{{ route('client.order') }}">Order</a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{{ route('contacts.contact') }}">Contact</a>

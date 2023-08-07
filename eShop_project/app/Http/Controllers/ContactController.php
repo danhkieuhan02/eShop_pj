@@ -11,7 +11,7 @@ class ContactController extends Controller
     public function index()
     {
         $contact = Contact::latest()->get();
-        return view('contacts.index', compact('contact'));
+        return view('contacts.create-contact', compact('contact'));
     }
 
     public function createContact()
